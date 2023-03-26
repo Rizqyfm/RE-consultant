@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [["./src/**/*.{html,js}"]],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
       primary: "#343D89",
@@ -18,6 +18,15 @@ module.exports = {
       headingThree: "32px",
       headingFour: "26px",
       bodyOne: "22px",
+      bodyTwo: "16px",
+    },
+    screens: {
+      xsm: "400px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
     extend: {},
   },
