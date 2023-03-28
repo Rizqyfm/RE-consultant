@@ -55,7 +55,8 @@ function App() {
               </h1>
               <h2 className="text-bodyOne text-white">
                 Tapi, susah itu relatif. <br />
-                Dengan bantuan yang tepat, urusan bisnis jadi jauh lebih mudah.
+                Dengan bantuan yang tepat, urusan bisnis anda bisa jauh lebih
+                mudah.
               </h2>
               <h3 className="text-bodyTwo text-white">
                 Kami RE Consultant, telah membantu banyak business owner dari
