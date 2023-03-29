@@ -11,6 +11,9 @@ import bontel from "./img/foto-bontel.png";
 import metapond from "./img/cover-metapond.png";
 import bangunin from "./img/cover-bangunin.png";
 import kudoku from "./img/cover-kudoku.png";
+import kosme from "./img/cover-kosme.png";
+import thomson from "./img/cover-thomson.png";
+import rumarenov from "./img/cover-rumarenov.png";
 
 function App() {
   return (
@@ -224,6 +227,44 @@ function App() {
                 <p className="text-bodyThree text-white">
                   Ideation & creating of Kudoku. Accepted at 2 global startup
                   accelerators & 2 Indonesian-based notable accelerators.
+                </p>
+              </section>
+              <section className="kosme flex flex-col gap-y-2 py-4">
+                <img
+                  className="work-picture w-auto"
+                  src={kosme}
+                  alt="workPicture"
+                ></img>
+                <h3 className="text-bodyOne text-white">Kosme Beauty Lab</h3>
+                <p className="text-bodyThree text-white">
+                  Membuat marketplace kosmetik Kosme Beauty Lab yang menampung
+                  brand Wardah, Rans Beauty, dll.
+                </p>
+              </section>
+              <section className="thomson flex flex-col gap-y-2 py-4">
+                <img
+                  className="work-picture w-auto"
+                  src={thomson}
+                  alt="workPicture"
+                ></img>
+                <h3 className="text-bodyOne text-white">
+                  Thomson Radio Network
+                </h3>
+                <p className="text-bodyThree text-white">
+                  Membuat website untuk perusahaan TRN yang mencakup 50 radio
+                  network.
+                </p>
+              </section>
+              <section className="rumahrenov flex flex-col gap-y-2 py-4">
+                <img
+                  className="work-picture w-auto"
+                  src={rumarenov}
+                  alt="workPicture"
+                ></img>
+                <h3 className="text-bodyOne text-white">Rumah Renov</h3>
+                <p className="text-bodyThree text-white">
+                  Membantu pertumbuhan bisnis konstruksi, membantu dalam
+                  kenaikan penjualan dari perusahaan.
                 </p>
               </section>
             </section>
