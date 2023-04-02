@@ -26,15 +26,30 @@ function App() {
           <div className="navbar bg-secondary flex px-6 sm:px-10 md:px-20 py-4 justify-between items-center">
             <img className="navbar-logo w-36" src={navbarLogo} alt="Logo"></img>
             <section className="navbar-links flex items-center gap-x-10">
-              <p className="font-dm text-primary  text-bodyOne hidden lg:block">
+              <Link
+                role="button"
+                to="#pricing"
+                class="font-dm text-primary  text-bodyOne hidden lg:block"
+                smooth
+              >
                 Pricing
-              </p>
-              <p className="font-dm text-primary text-bodyOne hidden lg:block">
+              </Link>
+              <Link
+                role="button"
+                to="#work"
+                class="font-dm text-primary  text-bodyOne hidden lg:block"
+                smooth
+              >
                 Work
-              </p>
-              <p className="font-dm text-primary text-bodyOne hidden lg:block">
+              </Link>
+              <Link
+                role="button"
+                to="#about"
+                class="font-dm text-primary  text-bodyOne hidden lg:block"
+                smooth
+              >
                 About
-              </p>
+              </Link>
               <a
                 role="button"
                 href="Https://wa.me/6287851968701"
@@ -192,7 +207,10 @@ function App() {
           </div>
 
           {/* Work */}
-          <div className="work-section bg-primary flex flex-col items-center py-10 md:py-30 px-6 sm:px-10 md:px-20 gap-y-8">
+          <div
+            id="work"
+            className="work-section bg-primary flex flex-col items-center py-10 md:py-30 px-6 sm:px-10 md:px-20 gap-y-8"
+          >
             <h2 className="text-bodyOne text-secondary text-left">
               Selected work
             </h2>
@@ -291,7 +309,10 @@ function App() {
         </main>
 
         <footer>
-          <div className="footer bg-secondary flex flex-col lg:flex-row lg:items-center lg:gap-x-14 py-10 md:py-30 px-6 sm:px-10 gap-y-8">
+          <div
+            id="about"
+            className="footer bg-secondary flex flex-col lg:flex-row lg:items-center lg:gap-x-14 py-10 md:py-30 px-6 sm:px-10 gap-y-8"
+          >
             <section className="footer-left flex flex-col gap-y-2 lg:w-1/2">
               <h2 className="text-bodyOne text-primary pb-4">
                 Siapakah R&E Consultant?
