@@ -6,14 +6,17 @@ import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
 import navbarLogo from "./img/re-logo.png";
+// import heroImg from "./img/hero-img.png";
 import erlan from "./img/foto-erlan.png";
 import bontel from "./img/foto-bontel.png";
-import metapond from "./img/cover-metapond.png";
-import bangunin from "./img/cover-bangunin.png";
-import kudoku from "./img/cover-kudoku.png";
-import kosme from "./img/cover-kosme.png";
-import thomson from "./img/cover-thomson.png";
-import rumarenov from "./img/cover-rumarenov.png";
+// import metapond from "./img/cover-metapond.png";
+// import bangunin from "./img/cover-bangunin.png";
+// import kudoku from "./img/cover-kudoku.png";
+// import kosme from "./img/cover-kosme.png";
+// import thomson from "./img/cover-thomson.png";
+// import rumarenov from "./img/cover-rumarenov.png";
+import workDesktop from "./img/work-desktop.png";
+import workResponsive from "./img/work-sm.png";
 
 function App() {
   return (
@@ -23,13 +26,13 @@ function App() {
           <div className="navbar bg-secondary flex px-6 sm:px-10 md:px-20 py-4 justify-between items-center">
             <img className="navbar-logo w-36" src={navbarLogo} alt="Logo"></img>
             <section className="navbar-links flex items-center gap-x-10">
-              <p className="font-dm text-primary  text-bodyOne hidden md:block">
+              <p className="font-dm text-primary  text-bodyOne hidden lg:block">
                 Pricing
               </p>
-              <p className="font-dm text-primary text-bodyOne hidden md:block">
+              <p className="font-dm text-primary text-bodyOne hidden lg:block">
                 Work
               </p>
-              <p className="font-dm text-primary text-bodyOne hidden md:block">
+              <p className="font-dm text-primary text-bodyOne hidden lg:block">
                 About
               </p>
               <a
@@ -51,8 +54,8 @@ function App() {
 
         <main>
           {/* Hero */}
-          <div className="hero-section bg-primary flex flex-col md:flex-row py-10 md:py-30 px-6 sm:px-10  md:px-20 md:items-center">
-            <section className="hero-left flex flex-col justify-start items-start gap-y-5 md:w-1/2">
+          <div className="hero-section bg-primary flex flex-col lg:flex-row py-10 md:py-30 px-6 sm:px-10 md:px-20 md:items-center">
+            <section className="hero-left flex flex-col justify-start items-start gap-y-5 lg:w-3/5 lg:gap-y-8">
               <h1 className="text-headingTwo text-secondary leading-tight">
                 Membuat atau mengurus bisnis itu susah.
               </h1>
@@ -94,21 +97,21 @@ function App() {
                 </Link>
               </section>
             </section>
-            <section className="hero-right hidden md:flex md:pl-40 ">
+            {/* <section className="hero-right hidden lg:flex lg:pl-10 ">
               <img
-                className="navbar-logo w-36 md:w-full"
-                src={erlan}
+                className="navbar-logo w-36 lg:w-full"
+                src={heroImg}
                 alt="Logo"
               ></img>
-            </section>
+            </section> */}
           </div>
 
           {/* Pricing */}
           <div
             id="pricing"
-            className="pricing-section bg-tertiary flex flex-col md:flex-row py-10 md:py-30 px-6 sm:px-10 md:px-20 md:items-center gap-y-8"
+            className="pricing-section bg-tertiary flex flex-col lg:flex-row lg:gap-x-8 py-10 md:py-30 px-6 sm:px-10 md:px-20 gap-y-8"
           >
-            <section className="pricing-section-left flex flex-col gap-y-4 border-2 border-secondary rounded-lg px-5 py-8">
+            <section className="pricing-section-left flex flex-col gap-y-4 border-2 border-secondary rounded-lg px-5 py-8 lg:w-4/5">
               <h3 className="text-bodyTwo text-secondary opacity-50">
                 Layanan unggulan
               </h3>
@@ -189,9 +192,25 @@ function App() {
           </div>
 
           {/* Work */}
-          <div className="work-section bg-primary flex flex-col items-start py-10 md:py-30 px-6 sm:px-10 md:px-20 gap-y-8">
-            <h2 className="text-bodyOne text-secondary">Selected work</h2>
-            <section className="work-section-portfolio flex flex-wrap border-2 border-secondary rounded-lg px-3 py-3 divide-y divide-white">
+          <div className="work-section bg-primary flex flex-col items-center py-10 md:py-30 px-6 sm:px-10 md:px-20 gap-y-8">
+            <h2 className="text-bodyOne text-secondary text-left">
+              Selected work
+            </h2>
+            <section className="work-section-portfolio hidden lg:block">
+              <img
+                className="work-picture w-auto"
+                src={workDesktop}
+                alt="workPicture"
+              ></img>
+            </section>
+            <section className="work-section-portfolio lg:hidden">
+              <img
+                className="work-picture w-auto"
+                src={workResponsive}
+                alt="workPicture"
+              ></img>
+            </section>
+            {/* <section className="work-section-portfolio flex flex-wrap border-2 border-secondary rounded-lg px-3 py-3 divide-y divide-white lg:hidden">
               <section className="metapond flex flex-col gap-y-2 py-4 w-full lg:w-auto">
                 <img
                   className="work-picture w-auto"
@@ -267,13 +286,13 @@ function App() {
                   kenaikan penjualan dari perusahaan.
                 </p>
               </section>
-            </section>
+            </section> */}
           </div>
         </main>
 
         <footer>
-          <div className="footer bg-secondary flex flex-col md:flex-row py-10 md:py-30 px-6 sm:px-10 md:px-20 md:items-center gap-y-8">
-            <section className="footer-left flex flex-col gap-y-2">
+          <div className="footer bg-secondary flex flex-col lg:flex-row lg:items-center lg:gap-x-14 py-10 md:py-30 px-6 sm:px-10 gap-y-8">
+            <section className="footer-left flex flex-col gap-y-2 lg:w-1/2">
               <h2 className="text-bodyOne text-primary pb-4">
                 Siapakah R&E Consultant?
               </h2>
@@ -302,10 +321,10 @@ function App() {
                 untuk memulai dan mengelola bisnis mereka.
               </p>
             </section>
-            <section className="footer-right border-2 border-primary rounded-lg flex flex-col sm:flex-row sm:justify-center">
+            <section className="footer-right border-2 border-primary rounded-lg flex flex-col sm:flex-row sm:justify-center md:justify-evenly lg:flex-col lg:items-center lg:w-1/2">
               <section className="rizqy-profile flex flex-col items-center gap-y-3 py-6">
                 <img
-                  className="footer-picture w-36"
+                  className="footer-picture w-36 lg:w-24"
                   src={bontel}
                   alt="displayPicture"
                 ></img>
@@ -325,7 +344,7 @@ function App() {
               </section>
               <section className="erlan-profile flex flex-col items-center gap-y-3 py-6">
                 <img
-                  className="footer-picture w-36"
+                  className="footer-picture w-36 lg:w-24"
                   src={erlan}
                   alt="displayPicture"
                 ></img>
