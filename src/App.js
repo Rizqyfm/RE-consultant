@@ -275,20 +275,31 @@ function App() {
           <div className="footer bg-secondary flex flex-col md:flex-row py-10 md:py-30 px-6 sm:px-10 md:px-20 md:items-center gap-y-8">
             <section className="footer-left flex flex-col gap-y-2">
               <h2 className="text-bodyOne text-primary pb-4">
-                About R&E Consultant
+                Siapakah R&E Consultant?
               </h2>
               <p className="text-bodyTwo text-black">
-                Okay it’s a little cringe. But we proudly say that R&E
-                consultant stands for Rizqy and Erlan Consultant. We don’t quite
-                think very much about our name. But we do think a lot about our
-                value, specially to you as our (future) client.
+                R&E Consultant adalah badan konsultan perorangan yang didirikan
+                oleh Rizqy Fachri dan Erlan Saputra.
               </p>
               <p className="text-bodyTwo text-black">
-                We met at MBA Program, in Institut Teknologi Bandung and work
-                from that time to help our colleagues and friends to start and
-                manage their business. Now, we want to help more than our
-                circle, by doing this consultant shitttt. Also, we don’t have
-                much money to live.
+                Rizqy merupakan serial entrepreneur yang berfokus pada
+                tech-startup. Rizqy mendirikan Kudoku, dan telah bekerjasama
+                dengan banyak perusahaan dalam sisi pengembangan bisnis melalui
+                teknologi. Pada tahun 2019, Rizqy mendirikan bisnis F&B dan
+                berhasil di akuisisi oleh angel investor pada tahun 2021.
+              </p>
+              <p className="text-bodyTwo text-black">
+                Sedangkan Erlan adalah seorang mantan konsultan bisnis di HUDEV
+                UI yang berfokus pada sektor pemerintahan khususnya pengembangan
+                potensi-potensi bisnis UMKM dan founder perusahaan di bidang
+                arsitek dan furniture.
+              </p>
+              <p className="text-bodyTwo text-black">
+                Rizqy dan Erlan melihat bahwa pengusaha adalah salah satu aspek
+                penting dalam perkembangan negara. Tetapi mereka berdua sadar
+                akan sulitnya membuat dan mengelola bisnis. Oleh karena itu,
+                Rizqy dan Erlan memutuskan fokus membantu para pengusaha lain
+                untuk memulai dan mengelola bisnis mereka.
               </p>
             </section>
             <section className="footer-right border-2 border-primary rounded-lg flex flex-col sm:flex-row sm:justify-center">
