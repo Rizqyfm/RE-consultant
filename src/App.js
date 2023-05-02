@@ -52,7 +52,7 @@ function App() {
               </Link>
               <a
                 role="button"
-                href="Https://wa.me/6287851968701"
+                href="https://wa.me/6281283773010"
                 target="_blank"
                 rel="noreferrer noopener"
                 class="primary-button flex items-center gap-x-2 text-bodyTwo md:text-bodyOne"
